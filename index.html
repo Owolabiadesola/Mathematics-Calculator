@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Mathematics Calculator</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div
+      class="container mt-5 w-25 float-center p-4"
+      style="background-color: rgb(5, 141, 252); height: 20rem"
+    >
+      <div>
+        <input
+          class="bg-light mt-3 btn btn-md btn-outline-info"
+          type="text"
+          id="result"
+          disabled
+        />
+        <button
+          class="px-3 mt-3 btn btn-md btn-outline-info bg-light"
+          onclick="clearScreen()"
+          id="btn"
+        >
+          C
+        </button>
+      </div>
+      <div>
+        <button
+          class="px-3 m-2 btn btn-md btn-outline-info bg-light"
+          value="7"
+          onclick="display('7')"
+        >
+          7
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="8"
+          onclick="display('8')"
+        >
+          8
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="9"
+          onclick="display('9')"
+        >
+          9
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="*"
+          onclick="display('*')"
+        >
+          *
+        </button>
+      </div>
+      <div>
+        <button
+          class="px-3 m-2 btn btn-md btn-outline-info bg-light"
+          value="4"
+          onclick="display('4')"
+        >
+          4
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="5"
+          onclick="display('5')"
+        >
+          5
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="6"
+          onclick="display('6')"
+        >
+          6
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="-"
+          onclick="display('-')"
+        >
+          -
+        </button>
+      </div>
+      <div>
+        <button
+          class="btn btn-md btn-outline-info bg-light text-info px-3 m-2"
+          value="1"
+          onclick="display('1')"
+        >
+          1
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="2"
+          onclick="display('2')"
+        >
+          2
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="3"
+          onclick="display('3')"
+        >
+          3
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="+"
+          onclick="display('+')"
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <button
+          class="px-3 m-2 btn btn-md btn-outline-info bg-light"
+          value="9"
+          onclick="display('0')"
+        >
+          0
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="."
+          onclick="display('.')"
+        >
+          .
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="/"
+          onclick="display('/')"
+        >
+          /
+        </button>
+        <button
+          class="px-3 mx-2 btn btn-md btn-outline-info bg-light"
+          value="="
+          onclick="calculate()"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
